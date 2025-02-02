@@ -1,35 +1,39 @@
 import React from 'react';
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { CiLinkedin } from "react-icons/ci";
+import { MdOutlineEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white font-bold py-8">
+    <footer className="bg-gray text-black font-bold py-2">
       {/* Social Media Icons */}
       <div className="flex justify-center space-x-6 mb-4">
         <span>
           <a href="https://www.instagram.com/baddwolf__/?hl=en" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-instagram text-2xl hover:text-pink-600 transition duration-300"></i>
+          <FaInstagram className='text-2xl text-red-500 hover:text-red-900'/>
           </a>
         </span>
         <span>
           <a href="https://github.com/Shubham7737" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github text-2xl hover:text-gray-400 transition duration-300"></i>
+          <FaGithub className='text-black text-2xl' />
           </a>
         </span>
         <span>
           <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin text-2xl hover:text-blue-600 transition duration-300"></i>
+          <CiLinkedin className='text-2xl text-blue-400 hover:text-blue-600' />
           </a>
         </span>
         <span>
           <a href="mailto:danushubham18@gmail.com" target="_blank" rel="noopener noreferrer">
-            <i className="fas fa-envelope text-2xl hover:text-red-600 transition duration-300"></i>
+          <MdOutlineEmail className='text-2xl text-blue-900'/>
           </a>
         </span>
       </div>
 
       {/* Footer Text */}
       <div className="text-center">
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-black">
           Made with @ by Shubham Danu
         </p>
       </div>

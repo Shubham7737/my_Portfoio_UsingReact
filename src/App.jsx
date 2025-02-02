@@ -7,6 +7,7 @@ import Contact from './Components/Contact'; // Corrected import path
 import Skill from './Components/Skill';
 import Footer from './Components/Footer';
 import Projects from './Components/Projects';
+import Body from './Components/Body';
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       
       {/* Routes */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Body />} />
         <Route path="/about" element={<About />} />
         <Route path="/skill" element={<Skill />} />
         <Route path="/contact" element={<Contact />} />
@@ -25,6 +26,7 @@ function App() {
       </Routes>
       <Footer/>
     </BrowserRouter>
+
   );
 }
 

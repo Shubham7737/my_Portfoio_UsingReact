@@ -9,7 +9,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-black text-white font-bold py-4 shadow-md">
+    <nav className="bg-white text-black font-bold py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo/Brand Name */}
         <div>
@@ -20,7 +20,7 @@ export default function Navbar() {
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none"
+            className="text-zinc-950 focus:outline-none"
           >
             {/* Hamburger Icon */}
             <svg

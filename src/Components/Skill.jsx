@@ -1,58 +1,84 @@
 import React from 'react';
+import { BiLogoCPlusPlus } from 'react-icons/bi';
+import { FaBootstrap, FaJava, FaJsSquare } from 'react-icons/fa';
+import { IoLogoCss3, IoLogoHtml5, IoLogoNodejs } from 'react-icons/io';
+import { IoLogoReact } from 'react-icons/io5';
+import { RiTailwindCssFill } from 'react-icons/ri';
+import { SiMongodb } from 'react-icons/si';
 
-export default function Skill() {
+const Skill = () => {
   return (
-    <div id="SKILL" className="bg-gray-50 h-140 p-20">
-      {/* Section Header */}
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">Skills</h1>
-      </div>
-
-      {/* Skill Icons */}
-      <div className="flex flex-wrap justify-center gap-8 p-20">
-        {/* First Row of Icons */}
-        <div className="flex justify-center gap-8 mb-6">
-          <div className="w-24 h-24 flex justify-center items-center">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s"
-              alt="HTML Icon"
-              className="object-contain transition-transform duration-500 hover:scale-110"
-            />
+    <section id="skills" className="py-16 bg-zinc-950">
+      <div className="container flex flex-col items-center mx-auto px-4">
+        <h2 className="text-3xl font-semibold text-center mb-12 text-gray-300">
+          My Skills
+        </h2>
+        <div className="flex flex-wrap  gap-12 justify-center align-middle ">
+          {/* Skill Card */}
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <BiLogoCPlusPlus className="text-6xl text-blue-500 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-blue-500">
+              C++
+            </span>
           </div>
-          <div className="w-24 h-24 flex justify-center items-center">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png"
-              alt="CSS Icon"
-              className="object-contain transition-transform duration-500 hover:scale-110"
-            />
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <FaJava className="text-6xl text-red-600 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-red-600">
+              Java
+            </span>
           </div>
-          <div className="w-24 h-24 flex justify-center items-center">
-            <img
-              src="https://media.licdn.com/dms/image/v2/D4E12AQFfe1nZbaWdMw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698604163003?e=2147483647&v=beta&t=zrcrB8lfoVmZo0LcSLgut3A_4PwE6YFe9EK3iy17L2Y"
-              alt="JavaScript Icon"
-              className="object-contain transition-transform duration-500 hover:scale-110"
-            />
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <IoLogoHtml5 className="text-6xl text-orange-600 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-orange-600">
+              HTML
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <IoLogoCss3 className="text-6xl text-blue-600 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-blue-600">
+              CSS
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <FaJsSquare className="text-6xl text-yellow-500 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-yellow-500">
+              JavaScript
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <IoLogoNodejs className="text-6xl text-green-600 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-green-600">
+              NodeJS
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <SiMongodb className="text-6xl text-green-500 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-green-500">
+              MongoDB
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <IoLogoReact className="text-6xl text-blue-400 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-blue-400">
+              React
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <FaBootstrap className="text-6xl text-purple-600 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-purple-600">
+              Bootstrap
+            </span>
+          </div>
+          <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
+            <RiTailwindCssFill className="text-6xl text-teal-400 group-hover:scale-125 transition-transform duration-200" />
+            <span className="mt-4 text-lg text-gray-300 group-hover:text-teal-400">
+              Tailwind
+            </span>
           </div>
         </div>
-
-        {/* Second Row of Icons */}
-        <div className="flex justify-center gap-8 mb-6">
-          <div className="w-24 h-24 flex justify-center items-center">
-            <img
-              src="https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png"
-              alt="React Icon"
-              className="object-contain transition-transform duration-500 hover:scale-110"
-            />
-          </div>
-          <div className="w-24 h-24 flex justify-center items-center">
-            <img
-              src="https://miro.medium.com/v2/resize:fit:900/1*TY9uBBO9leUbRtlXmQBiug.png"
-              alt="Node.js Icon"
-              className="object-contain transition-transform duration-500 hover:scale-110"
-            />
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default Skill;

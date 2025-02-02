@@ -2,8 +2,9 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div id="CONTACT" className="py-12 bg-gray-100">
+    <div id="CONTACT" className="py-12  bg-zinc-950">
       <div className="container mx-auto px-4">
+        <h1 className='text-white text-center mb-5 font-bold text-2xl'>Contact Us</h1>
         <div className="contact max-w-xl mx-auto bg-white p-6 shadow-md rounded-lg">
           <form
             action="https://api.web3forms.com/submit"

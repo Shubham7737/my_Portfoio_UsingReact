@@ -60,7 +60,7 @@ export default function Home() {
       {showButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-10 right-10 bg-blue-600 text-xl text-white p-4 rounded-full pl-6 pr-6 shadow-lg hover:bg-blue-700 transition-all duration-300"
+          className="fixed bottom-10 right-10 z-50 bg-blue-600 text-xl text-white p-4 rounded-full pl-6 pr-6 shadow-lg hover:bg-blue-700 transition-all duration-300"
         >
           ↑
         </button>

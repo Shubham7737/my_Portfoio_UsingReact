@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Travel Website",
     description:
-      " It provides beautiful destinations, travel guides, and essential information to make every trip memorable.",
+      "Travel Website It provides beautiful destinations, travel guides, and essential information to make every trip memorable.",
     video:
       "https://videos.pexels.com/video-files/2519660/2519660-uhd_2560_1440_24fps.mp4",
     github: "https://github.com/Shubham7737/Travel-Website",
@@ -69,9 +69,8 @@ function Projects() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    speed: 4000,
-    autoplaySpeed: 1,
-    cssEase: "linear",
+    autoplaySpeed: 2000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 1024,

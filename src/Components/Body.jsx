@@ -13,7 +13,7 @@ function Body() {
       <About />
       <Skill />
        <Projects />
-       <Services />
+       {/* <Services /> */}
        <Contact />
 
     </div>

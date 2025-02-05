@@ -66,7 +66,7 @@ function Projects() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 4000,
@@ -83,7 +83,7 @@ function Projects() {
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -101,7 +101,7 @@ function Projects() {
   };
 
   return (
-    <div className="bg-zinc-950 min-h-screen p-8">
+    <div className="bg-zinc-950 min-h-screen lg:px-40 sm:px-2 md:px-2 sm:min-h-fit">
       {/* Header */}
       <div className="py-5 text-center">
         <h1 className="text-white text-3xl font-bold">Projects</h1>
@@ -113,7 +113,7 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-blue-50 min-w-fit h-[400px] text-black rounded-xl p-2"
+              className="bg-blue-50 min-w-fit h-fit text-black rounded-xl p-2"
             >
               <video
                 src={project.video}

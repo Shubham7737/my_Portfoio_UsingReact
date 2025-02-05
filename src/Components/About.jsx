@@ -14,9 +14,9 @@ export default function About() {
         </div>
 
         {/* About Content */}
-        <div className="rightAbout w-full lg:w-2/3">
+        <div className="rightAbout w-full lg:w-2/3 ">
           {/* Box 1: About Me Section */}
-          <div className="box1 mb-10">
+          <div className="box1 mb-10 mx-10">
             <h1 className="text-3xl font-bold mb-4 text-white">About me</h1>
             <p className="boxPara text-white mb-2">
               A result-focused professional, seeking an opportunity to utilize
@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           {/* Box 2: Get to Know Me Section */}
-          <div className="box2 mb-8  text-white">
+          <div className="box2 mb-8  text-white mx-10">
             <h1 className="text-3xl font-bold mb-4">Get to know me!</h1>
             <p className="boxPara mb-2">
               Hey! It's Shubham Danu, and I'm a Frontend Web Developer

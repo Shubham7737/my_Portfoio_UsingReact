@@ -13,7 +13,7 @@ const Skill = () => {
         <h2 className="text-3xl font-semibold text-center mb-12 text-gray-300">
           My Skills
         </h2>
-        <div className="flex flex-wrap  gap-12 justify-center align-middle ">
+        <div className="flex flex-wrap  gap-12 w-[80%] justify-center align-middle ">
           {/* Skill Card */}
           <div className="w-44 flex flex-col items-center bg-gray-800 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 group">
             <BiLogoCPlusPlus className="text-6xl text-blue-500 group-hover:scale-125 transition-transform duration-200" />

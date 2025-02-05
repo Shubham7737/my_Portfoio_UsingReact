@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray text-black font-bold py-2">
+    <footer className="bg-zinc-300 text-black font-bold py-2">
       {/* Social Media Icons */}
       <div className="flex justify-center space-x-6 mb-4">
         <span>

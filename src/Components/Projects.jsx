@@ -1,15 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const projects = [
-  {
-    title: "Calculator",
-    description:
-      "The Calculator App provides an easy-to-use, web-based calculator that performs basic arithmetic operations. ",
-    video:
-      "https://videos.pexels.com/video-files/6781912/6781912-uhd_1440_2560_30fps.mp4",
-    github: "https://github.com/Shubham7737/Calculator",
-    liveDemo: "https://calculator-five-opal-76.vercel.app/",
-  },
   {
     title: "Travel Website",
     description:
@@ -56,15 +50,6 @@ const projects = [
     liveDemo: "https://login-student-page.vercel.app/",
   },
   {
-    title: "Dark mode",
-    description:
-      "Dark mode Projects are this functionality allows users to seamlessly switch between light and dark themes",
-    video:
-      "https://videos.pexels.com/video-files/6758640/6758640-hd_1920_1080_24fps.mp4",
-    github: "https://github.com/Shubham7737/dark-mode",
-    liveDemo: "https://dark-mode-six-alpha.vercel.app/",
-  },
-  {
     title: "My PortFolio",
     description:
       "Hi, I'm Shubham, a passionate Frontend Developer with expertise in React.js, JavaScript, and modern web technologies.",
@@ -76,47 +61,92 @@ const projects = [
 ];
 
 function Projects() {
+  const [projectList, setProjectList] = useState(projects);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 1,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="bg-zinc-950 min-h-screen">
+    <div className="bg-zinc-950 min-h-screen p-8">
       {/* Header */}
-      <div className="bg-zinc-950 py-5">
-        <h1 className="text-white text-center font-bold text-3xl">Projects</h1>
+      <div className="py-5 text-center">
+        <h1 className="text-white text-3xl font-bold">Projects</h1>
       </div>
 
       {/* Projects Grid */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white text-black rounded-lg shadow-lg p-5 hover:scale-105 transition-transform"
-          >
-            <video
-              src={project.video}
-              autoPlay loop muted
-              className="w-full h-48 object-cover rounded-lg mb-3"
-            ></video>
-            <h2 className="text-xl font-semibold text-center">{project.title}</h2>
-            <p className="text-gray-500 text-sm mt-2 mb-4 text-center">{project.description}</p>
-            <div className="flex justify-between">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black font-semibold rounded-lg bg-blue-400 p-2 hover:bg-blue-600"
-              >
-                GitHub
-              </a>
-              <a
-                href={project.liveDemo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black font-semibold rounded-lg bg-blue-400 p-2 hover:bg-blue-600"
-              >
-                Live Demo
-              </a>
+      <div className="mt-20">
+        <Slider {...settings}>
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="bg-blue-50 min-w-fit h-[400px] text-black rounded-xl p-2"
+            >
+              <video
+                src={project.video}
+                autoPlay
+                loop
+                muted
+                className="w-full h-48 object-cover rounded-lg mb-3"
+              ></video>
+              <h2 className="text-xl font-semibold text-center mt-5">{project.title}</h2>
+              <p className="text-sm text-gray-500 mt-4 text-center">
+                {project.description}
+              </p>
+              <div className="flex justify-between mt-3 p-4">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-400 text-black font-semibold rounded-lg p-2 hover:bg-blue-600"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-400 text-black font-semibold rounded-lg p-2 hover:bg-blue-600"
+                >
+                  Live Demo
+                </a>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </Slider>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <nav className="bg-white text-black font-bold py-4 shadow-md">
+    <nav className="bg-zinc-300 text-black font-bold py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo/Brand Name */}
         <div>
@@ -61,10 +61,10 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                to="/skill"
+                to="/service"
                 className="hover:text-blue-400 transition duration-300"
               >
-                Skill
+                Services
               </Link>
             </li>
             <li>
@@ -110,10 +110,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              to="/skills"
+              to="/service"
               className="block text-white hover:text-blue-400 transition duration-300"
             >
-              Skills
+              Services
             </Link>
           </li>
           <li>

@@ -41,7 +41,7 @@ export default function Home() {
               <p className="mt-4 text-xl transition-all duration-500 ease-in-out hover:text-blue-400">
                 I'm a Front-end developer.
               </p>
-              <a href="#" download>
+              <a href="./Shubham_Cv.pdf" download>
                 <button
                   id="cv"
                   className="mt-6 px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300"
